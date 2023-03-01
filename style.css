@@ -1,0 +1,37 @@
+body{
+    background-color:whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+@media (max-width: 714px){
+    body{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width: 477px){
+    body{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 250px){
+    body{
+        grid-template-columns: 1fr;
+    }
+} 
+.card{
+    background-color:ghostwhite;
+    height: 320px;
+    width:180px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    text-transform: capitalize;
+    box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
+}
+img{
+    height: 150px;
+    width:180px;
+    object-fit: cover;
+}
